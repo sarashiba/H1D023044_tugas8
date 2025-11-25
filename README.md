@@ -4,12 +4,12 @@ Aplikasi manajemen produk sederhana berbasis Flutter yang terhubung dengan konse
 
 ## Tampilan Aplikasi (Screenshots)
 
-<img width="540" height="1204" alt="image" src="https://github.com/user-attachments/assets/0350f2f4-976a-4b6e-81a5-c558f736fe6f" />
-<img width="540" height="1204" alt="image" src="https://github.com/user-attachments/assets/a9f36815-9071-4796-bd67-90da334def16" />
-<img width="540" height="1204" alt="image" src="https://github.com/user-attachments/assets/e4b34927-3476-409a-9077-39a2edb9f4eb" />
-<img width="540" height="1204" alt="image" src="https://github.com/user-attachments/assets/1374507b-b471-47c9-9389-310c9d7a4ac4" />
-<img width="540" height="1204" alt="image" src="https://github.com/user-attachments/assets/2e9932dc-0b75-44d5-be34-5345a4b69316" />
-<img width="540" height="1204" alt="image" src="https://github.com/user-attachments/assets/187612f6-98d1-43ee-8d85-aa211e25eaff" />
+<img width="270" height="602" alt="image" src="https://github.com/user-attachments/assets/0350f2f4-976a-4b6e-81a5-c558f736fe6f" />
+<img width="270" height="602" alt="image" src="https://github.com/user-attachments/assets/a9f36815-9071-4796-bd67-90da334def16" />
+<img width="270" height="602" alt="image" src="https://github.com/user-attachments/assets/e4b34927-3476-409a-9077-39a2edb9f4eb" />
+<img width="270" height="602" alt="image" src="https://github.com/user-attachments/assets/1374507b-b471-47c9-9389-310c9d7a4ac4" />
+<img width="270" height="602" alt="image" src="https://github.com/user-attachments/assets/2e9932dc-0b75-44d5-be34-5345a4b69316" />
+<img width="270" height="602" alt="image" src="https://github.com/user-attachments/assets/187612f6-98d1-43ee-8d85-aa211e25eaff" />
 
 
 ## Penjelasan Kode
