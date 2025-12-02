@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:tokokita/bloc/produk_bloc.dart';
 import 'package:tokokita/model/produk.dart';
 import 'package:tokokita/ui/produk_form.dart';
+import 'package:tokokita/ui/produk_page.dart';
+import 'package:tokokita/widget/warning_dialog.dart';
 
 class ProdukDetail extends StatefulWidget {
   final Produk? produk;
-
   const ProdukDetail({Key? key, this.produk}) : super(key: key);
-
   @override
   _ProdukDetailState createState() => _ProdukDetailState();
 }
@@ -16,8 +17,8 @@ class _ProdukDetailState extends State<ProdukDetail> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xFF000080),
         title: const Text('Detail Produk Sarah'),
+        backgroundColor: const Color(0xFF000080),
         foregroundColor: Colors.white,
       ),
       body: Center(
@@ -85,7 +86,17 @@ class _ProdukDetailState extends State<ProdukDetail> {
         OutlinedButton(
           child: const Text("Ya"),
           onPressed: () {
-            Navigator.pop(context);
+            ProdukBloc.deleteProduk(id: int.parse(widget.produk!.id!)).then(
+                (value) => {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const ProdukPage()))
+                    }, onError: (error) {
+              showDialog(
+                  context: context,
+                  builder: (BuildContext context) => const WarningDialog(
+                        description: "Hapus gagal, silahkan coba lagi",
+                      ));
+            });
           },
         ),
         OutlinedButton(
@@ -94,7 +105,6 @@ class _ProdukDetailState extends State<ProdukDetail> {
         )
       ],
     );
-
     showDialog(builder: (context) => alertDialog, context: context);
   }
 }
